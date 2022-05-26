@@ -60,6 +60,9 @@
       </div>
     </nav>
 
+    <% if user_signed_in? %>
+      Hey there <%= current_user %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
