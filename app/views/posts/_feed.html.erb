@@ -23,6 +23,8 @@
             <% if user_signed_in? %>
               <strong><%= post.user.name %></strong><br />
               <small>@<%= post.user.username %></small><br />
+            <% else %>
+              <strong>Log in to see the author's name</strong>
             <% end %>
             <p><%= post.post %></p>
           </div>
