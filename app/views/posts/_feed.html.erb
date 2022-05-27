@@ -21,12 +21,12 @@
         <div class="media-content">
           <div class="content">
             <% if user_signed_in? %>
-              <strong><%= post.user.name %></strong><br />
-              <small>@<%= post.user.username %></small><br />
+              <p><strong>@<%= post.user.username %>: </strong><%= post.post %></p>
             <% else %>
               <strong>Log in to see the author's name</strong>
+              <p><%= post.post %></p>
             <% end %>
-            <p><%= post.post %></p>
+            
           </div>
           <nav class="level">
             <div class="level-left is-mobile">
